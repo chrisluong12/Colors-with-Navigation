@@ -19,12 +19,16 @@ class ColorsViewController: UIViewController, UITableViewDataSource, UITableView
                   Color(name: "brown", uiColor: UIColor.brown)]
     //git check
        // var colors = ["red", "orange", "yellow", "green", "blue", "purple", "brown"]
+    @IBOutlet weak var colorsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Colors"
 
         // Do any additional setup after loading the view.
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,10 +46,21 @@ class ColorsViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "colorCell", for: indexPath)
         cell.textLabel?.text = colors[indexPath.row].name
         cell.backgroundColor=colors[indexPath.row].uiColor
+        cell.selectionStyle = .none
         
         return cell
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destination = segue.destination as? ColorDetailViewController,
+            let row = colorsTableView.indexPathForSelectedRow?.row{
+            destination.color = colors[(colorsTableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+
+    
     /*
     // MARK: - Navigation
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D9D861820630FD0007D334A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D861720630FD0007D334A /* Color.swift */; };
+		9DC079562064869F006ECC46 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC079552064869F006ECC46 /* ColorDetailViewController.swift */; };
 		9DC1EACA205C4A03007C2304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1EAC9205C4A03007C2304 /* AppDelegate.swift */; };
 		9DC1EACF205C4A03007C2304 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC1EACD205C4A03007C2304 /* Main.storyboard */; };
 		9DC1EAD1205C4A03007C2304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC1EAD0205C4A03007C2304 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		9D9D861720630FD0007D334A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		9DC079552064869F006ECC46 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
 		9DC1EAC6205C4A03007C2304 /* Colors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC1EAC9205C4A03007C2304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DC1EACE205C4A03007C2304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				9DC1EAD5205C4A03007C2304 /* Info.plist */,
 				9DC1EAF7205C4D84007C2304 /* ColorsViewController.swift */,
 				9D9D861720630FD0007D334A /* Color.swift */,
+				9DC079552064869F006ECC46 /* ColorDetailViewController.swift */,
 			);
 			path = Colors;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				9DC1EAF8205C4D84007C2304 /* ColorsViewController.swift in Sources */,
 				9DC1EACA205C4A03007C2304 /* AppDelegate.swift in Sources */,
 				9D9D861820630FD0007D334A /* Color.swift in Sources */,
+				9DC079562064869F006ECC46 /* ColorDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
